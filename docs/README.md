@@ -1,6 +1,6 @@
 ---
 home: true
-title: nekosu
+title: The kernel level rootkit for files manager access control.
 footer: GPL Licensed | Copyright © 2025-present FMAC-Team
 ---
 
