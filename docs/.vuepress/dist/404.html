@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>nekosu</title><meta name="description" content="The kernel level rootkit for files manager access control.">
+    <link rel="stylesheet" href="/assets/css/styles.3da68603.css">
+    <link rel="preload" href="/assets/js/runtime~app.3f7ba84c.js" as="script"><link rel="preload" href="/assets/css/styles.3da68603.css" as="style"><link rel="preload" href="/assets/js/768.013f0447.js" as="script"><link rel="preload" href="/assets/js/app.c1bcc183.js" as="script">
+    <link rel="prefetch" href="/assets/js/index.html.59ea97e5.js" as="script"><link rel="prefetch" href="/assets/js/404.html.d00c7f36.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-145c1213><main class="page" data-v-145c1213><div vp-content data-v-145c1213><h1 data-v-145c1213>404</h1><blockquote data-v-145c1213>Looks like we&#39;ve got some broken links.</blockquote><a class="route-link" href="/" data-v-145c1213>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script src="/assets/js/runtime~app.3f7ba84c.js" defer></script><script src="/assets/js/768.013f0447.js" defer></script><script src="/assets/js/app.c1bcc183.js" defer></script>
+  </body>
+</html>
