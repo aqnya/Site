@@ -1,6 +1,6 @@
-import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
-import { webpackBundler } from '@vuepress/bundler-webpack'
+import { defaultTheme } from '@vuepress/theme-default'
+import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
   lang: 'en-US',
@@ -8,11 +8,11 @@ export default defineUserConfig({
   title: 'nekosu',
   description: 'The kernel level rootkit for files manager access control.',
 
-  theme: defaultTheme({
-//    logo: 'https://vuejs.press/images/hero.png',
+  base: '/', // Cloudflare Pages 根路径部署
 
+  theme: defaultTheme({
     navbar: ['/'],
   }),
 
-  bundler: webpackBundler(),
+  bundler: viteBundler(),
 })
